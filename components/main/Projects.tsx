@@ -24,7 +24,7 @@ const Projects = () => {
           src="/drawing-resized.png"
           title="Online Drawing App"
           link="https://github.com/samuel-antunes/DrawingApp"
-          description="A react website where users in the same room could simultaneously draw on the same canvas, and talk in the room chat with websockets."
+          description="A react website where users in the same room could simultaneously draw on the same canvas, and send messages on the room chat."
         />
         <ProjectCard
           src="/cryptobook-resized.png"
