@@ -14,20 +14,24 @@ import AdvancedBannerTop from "@/components/main/AdvancedBanner";
 function page() {
   return (
     <div>
-      <AdvancedBannerTop img1="/starless_orion.png" img2="/mask_orion.png" />
+      <AdvancedBannerTop
+        img1="/starless_wide.jpg"
+        img2="/starmask_wide.png"
+        page="observatory"
+      />
 
-      <div className="inset font-bold">
+      <div className="inset font-bold flex flex-col ">
         <motion.div
           initial="hidden"
           animate="visible"
-          className="flex flex-col items-center justify-evenly px-20 mt-24 w-full z-[25]"
+          className="items-center justify-center pl-[10%] md:px-20 mt-24 w-full z-[25]"
         >
-          <div className="h-full w-auto flex flex-row gap-5 justify-center">
+          <div className="h-full w-auto flex flex-col md:flex-row gap-5 justify-center">
             <motion.div
               variants={slideInFromTop}
-              className="flex flex-row gap-6 mt-6 text-6x1 font-bold text-white w-auto h-auto"
+              className="flex flex-col md:flex-row gap-6 mt-6 text-6x1 font-bold text-white w-auto h-auto"
             >
-              <div className="flex flex-col w-[70%]">
+              <div className="flex flex-col w-[90%] md:w-[70%]">
                 <span className="text-3xl mb-4">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                     Astrophotography{" "}
@@ -81,11 +85,11 @@ function page() {
               </div>
               <motion.div
                 variants={slideInFromRight(0.8)}
-                className="w-full h-full flex justify-end"
+                className="w-[90%] md:w-full h-full flex justify-end"
               >
                 <Observatory
                   urlBefore="swan_nebula_before.png"
-                  urlAfter="swan_nebula_after.png"
+                  urlAfter="swan_nebula_after.jpg"
                 />
               </motion.div>
             </motion.div>
@@ -139,12 +143,12 @@ function page() {
           initial="hidden"
           animate="visible"
           viewport={{ once: true }}
-          className="flex flex-col items-center justify-center px-20 mt-20 h-screen w-screen z-[25]"
+          className="flex flex-col items-center justify-center pl-[10%] pr-[10%] mt-20 h-screen w-screen z-[25]"
         >
-          <div className="h-full w-full flex flex-row gap-5 justify-evenly">
+          <div className="h-full w-full flex flex-col md:flex-row gap-5 justify-evenly">
             <motion.div
               variants={slideInFromTop}
-              className="flex flex-row gap-6 mt-6 text-6x1 font-bold text-white w-auto h-auto"
+              className="flex flex-col md:flex-row gap-6 mt-[30vh] md:mt-6 text-6x1 font-bold text-white w-auto h-auto"
             >
               <motion.div
                 variants={slideInFromRight(0.8)}
@@ -152,10 +156,10 @@ function page() {
               >
                 <Observatory
                   urlBefore="m33_before.png"
-                  urlAfter="m33_after_2.png"
+                  urlAfter="m33_after_2.jpg"
                 />
               </motion.div>
-              <div className="flex flex-col w-[100%] m-24">
+              <div className="flex flex-col w-[100%] justify-end">
                 <motion.p
                   variants={slideInFromLeft(0.8)}
                   className="text-lg text-gray-200 mt-5 text-justify"

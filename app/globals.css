@@ -134,10 +134,6 @@ body {
   color: #446;
 }
 
-.full {
-  height: 320vh;
-}
-
 .center {
   display: flex;
   align-items: center;

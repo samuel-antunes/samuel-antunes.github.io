@@ -14,7 +14,11 @@ export default function Home() {
   return (
     <main className="h-full w-full scroll-smooth">
       <div className="flex flex-col">
-        <AdvancedBannerTop img1="/starless_test.png" img2="/mask.png" />
+        <AdvancedBannerTop
+          img1="/starless_small.jpg"
+          img2="/mask.png"
+          page="home"
+        />
         {/* <Hero />
         <Skills />
         <Projects /> */}

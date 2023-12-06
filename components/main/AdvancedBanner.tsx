@@ -7,9 +7,10 @@ import Projects from "../main/Projects";
 interface ParallaxProps {
   img1: string;
   img2: string;
+  page: string;
 }
 
-export const AdvancedBannerTop = ({ img1, img2 }: ParallaxProps) => {
+export const AdvancedBannerTop = ({ img1, img2, page }: ParallaxProps) => {
   const background: BannerLayer = {
     image: img1,
     translateY: [0, 25],
@@ -33,26 +34,11 @@ export const AdvancedBannerTop = ({ img1, img2 }: ParallaxProps) => {
     shouldAlwaysCompleteAnimation: true,
   };
 
-  //   const overlay: BannerLayer = {
-  //     // opacity: [0, 1, "easeOutCubic"],
-  //     shouldAlwaysCompleteAnimation: true,
-  //     expanded: false,
-  //     children: (
-  //       <div className="inset">
-  //         <div className="flex flex-col gap-20">
-  //           <Hero />
-  //           <Skills />
-  //           <Projects />
-  //         </div>
-  //       </div>
-  //     ),
-  //   };
-
   return (
     <ParallaxProvider>
       <ParallaxBanner
         layers={[background, headline, foreground]}
-        className="full"
+        className={`h-[510vh] md:h-[${page == "home" ? 330 : 200}vh]`}
       />
     </ParallaxProvider>
   );

@@ -5,15 +5,13 @@ const Projects = () => {
   return (
     <div className="flex flex-col items-center justify-center pt-10 mb-20]">
       <a
+        id="projects"
         href="/observatory"
         className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-yellow-300 pb-10"
       >
         Projects
       </a>
-      <div
-        className="h-full w-full flex flex-col md:flex-row gap-10 px-10 z-[50]"
-        id="projects"
-      >
+      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10 z-[50]">
         <ProjectCard
           src="/galaxy-resized.png"
           title="Observatory Photography App"
