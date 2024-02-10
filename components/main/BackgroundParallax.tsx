@@ -13,6 +13,7 @@ const ParallaxBackground = ({
     let inThrottle: any;
     return function () {
       const args = arguments;
+      //@ts-ignore
       const context = this;
       if (!inThrottle) {
         func.apply(context, args);
@@ -26,10 +27,11 @@ const ParallaxBackground = ({
     const handleScroll = () => {
       const offset = window.scrollY;
       // Your parallax effect logic here
-      const parallaxOffset = offset > 100 ? (offset - 100) * speedFactor : 0;
-      document.querySelector(
-        ".starmask"
-      ).style.backgroundPositionY = `${parallaxOffset}px`;
+      const element = document.querySelector(".starmask") as any;
+      if (element !== null) {
+        const parallaxOffset = offset > 100 ? (offset - 100) * speedFactor : 0;
+        element.style.backgroundPositionY = `${parallaxOffset}px`;
+      }
     };
     // throttle(, 100); // Adjust the limit as needed
 

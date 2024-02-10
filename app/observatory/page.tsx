@@ -14,7 +14,7 @@ import ParallaxBackground from "@/components/main/BackgroundParallax";
 
 function page() {
   return (
-    <main className="h-full w-full scroll-smooth">
+    <div className="h-full w-full scroll-smooth">
       <ParallaxBackground
         starlessImg="/starless_orion_small.jpg"
         starmaskImg="/starmask_orion_small.png"
@@ -45,19 +45,20 @@ function page() {
               </div>
               <p className="text-lg mt-5">
                 My most recent work was providing software for an observatory!
-                The image on the right provides a comparison to what a "raw"
-                image looked like, and what the final image looked like after
-                being processed by the software I created. (BTW, this is the
-                Swan Nebula, can you see it?)
+                The image on the right provides a comparison to what a
+                &quot;raw&quot; image looked like, and what the final image
+                looked like after being processed by the software I created.
+                (BTW, this is the Swan Nebula, can you see it?)
               </p>
               <p className="text-lg mt-5">
                 I received this opportunity by achieving the highest grade in a
-                physics course, with the topic "Introduction to Observational
-                Astrophysics", and for being a hobbist astrophotographer (The
-                background images of this website were taken by me). The goal of
-                the project was to design a desktop application, that would be
-                used by the non-technical staff of the SFU Trottier Observatory,
-                to process astronomical images taken with the equipment there.
+                physics course, with the topic &quot;Introduction to
+                Observational Astrophysics&quot;, and for being a hobbist
+                astrophotographer (The background images of this website were
+                taken by me). The goal of the project was to design a desktop
+                application, that would be used by the non-technical staff of
+                the SFU Trottier Observatory, to process astronomical images
+                taken with the equipment there.
               </p>
             </div>
             <div className="md:w-auto flex justify-end">
@@ -78,15 +79,15 @@ function page() {
             </div>
             <div className="md:w-2/3 flex flex-col gap-6 md:pt-[150px] ">
               <p className="text-lg">
-                As it possible to see the final image is colored, and a "raw"
-                image is black and white, due to the fact that the camera at the
-                observatory is monochrome. To build the final image I had to
-                perform a composition of many images, for each of the colors R,
-                G, and B, that were taken with the physical placement of those
-                filters in front of the camera. The number of images per color
-                varied depending on the available data, but it could be between
-                10 to 100's of images, leading to the necessity of processing
-                several GBs of data.
+                As it possible to see the final image is colored, and a
+                &quot;raw&quot; image is black and white, due to the fact that
+                the camera at the observatory is monochrome. To build the final
+                image I had to perform a composition of many images, for each of
+                the colors R, G, and B, that were taken with the physical
+                placement of those filters in front of the camera. The number of
+                images per color varied depending on the available data, but it
+                could be between 10 to 100&apos;s of images, leading to the
+                necessity of processing several GBs of data.
               </p>
               <p className="text-lg hidden md:flex">
                 Due to the memory constraints, I had to optimize the
@@ -102,7 +103,7 @@ function page() {
           </div>
         </div>
       </ParallaxBackground>
-    </main>
+    </div>
   );
 }
 
