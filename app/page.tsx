@@ -15,10 +15,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <main className="h-full w-full scroll-smooth">
-      <Head>
-        <title>My portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className="flex flex-col">
         {/* <AdvancedBannerTop
           img1="/starless_small.jpg"
@@ -30,7 +26,7 @@ export default function Home() {
         <Skills />
         <Projects /> */}
         <ParallaxBackground
-          starlessImg={"/starless_sadr.jpg"}
+          starlessImg={"/starless_sadr_smaller.jpg"}
           starmaskImg={"/starmask_sadr.png"}
           speedFactor={0.12}
         >
