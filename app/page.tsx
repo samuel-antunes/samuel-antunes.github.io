@@ -9,26 +9,39 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import Image from "next/image";
 // import ParallaxComponent from "@/components/main/ParallaxComponent";
 import AdvancedBannerTop from "@/components/main/AdvancedBanner";
+import ParallaxBackground from "@/components/main/BackgroundParallax";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <main className="h-full w-full scroll-smooth">
+      <Head>
+        <title>My portfolio</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="flex flex-col">
-        <AdvancedBannerTop
+        {/* <AdvancedBannerTop
           img1="/starless_small.jpg"
           img2="/mask.png"
           page="home"
-        />
+        /> */}
+
         {/* <Hero />
         <Skills />
         <Projects /> */}
-        <div className="inset">
-          <div className="flex flex-col gap-20">
-            <Hero />
-            <Skills />
-            <Projects />
+        <ParallaxBackground
+          starlessImg={"/starless_sadr.jpg"}
+          starmaskImg={"/starmask_sadr.png"}
+          speedFactor={0.12}
+        >
+          <div className="">
+            <div className="flex flex-col justify-center">
+              <Hero />
+              <Skills />
+              <Projects />
+            </div>
           </div>
-        </div>
+        </ParallaxBackground>
       </div>
 
       {/* <Image

@@ -79,6 +79,8 @@
 //   },
 // ];
 
+import { fullBrowserVersion } from "react-device-detect";
+
 export const Socials = [
   {
     name: "Linkedin",
@@ -152,7 +154,7 @@ export const Frontend_skill = [
     height: 80,
   },
   {
-    skill_name: "Next js 13",
+    skill_name: "NextJS",
     Image: "/next.png",
     width: 80,
     height: 80,
@@ -161,19 +163,19 @@ export const Frontend_skill = [
 
 export const Backend_skill = [
   {
-    skill_name: "Node js",
+    skill_name: "NodeJS",
     Image: "/node-js.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Express js",
+    skill_name: "ExpressJS",
     Image: "/express.png",
     width: 80,
     height: 80,
   },
   {
-    skill_name: "Mongo db",
+    skill_name: "MongoDB",
     Image: "/mongodb.png",
     width: 40,
     height: 40,
@@ -185,13 +187,13 @@ export const Backend_skill = [
   //   height: 55,
   // },
   {
-    skill_name: "Postger SQL",
+    skill_name: "PostgreSQL",
     Image: "/postger.png",
     width: 70,
     height: 70,
   },
   {
-    skill_name: "My SQL",
+    skill_name: "MySQL",
     Image: "/mysql.png",
     width: 70,
     height: 70,
@@ -229,7 +231,21 @@ export const Full_stack = [
     width: 70,
     height: 70,
   },
+  {
+    skill_name: "Go",
+    Image: "/go.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "C++",
+    Image: "/c++.png",
+    width: 60,
+    height: 60,
+  },
+];
 
+export const Other_skill = [
   {
     skill_name: "Figma",
     Image: "/figma.png",
@@ -238,11 +254,49 @@ export const Full_stack = [
   },
 ];
 
-export const Other_skill = [
+export const python_skills = [
   {
-    skill_name: "Go",
-    Image: "/go.png",
+    skill_name: "Python",
+    Image: "/python.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "PyTorch",
+    Image: "/pytorch.png",
     width: 60,
     height: 60,
   },
+  {
+    skill_name: "Langchain",
+    Image: "/langchain.png",
+    width: 120,
+    height: 60,
+  },
+  {
+    skill_name: "Numpy",
+    Image: "/numpy.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Pandas",
+    Image: "/pandas.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "PyQt",
+    Image: "/pyqt.png",
+    width: 60,
+    height: 60,
+  },
+];
+
+export const skillsCategories = [
+  Frontend_skill,
+  python_skills,
+  Backend_skill,
+  Full_stack,
+  Other_skill,
 ];

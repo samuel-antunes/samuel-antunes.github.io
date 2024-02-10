@@ -11,6 +11,7 @@ interface ParallaxProps {
 }
 
 export const AdvancedBannerTop = ({ img1, img2, page }: ParallaxProps) => {
+  const size = page === "home" ? 200 : 100;
   const background: BannerLayer = {
     image: img1,
     translateY: [0, 25],
@@ -38,7 +39,7 @@ export const AdvancedBannerTop = ({ img1, img2, page }: ParallaxProps) => {
     <ParallaxProvider>
       <ParallaxBanner
         layers={[background, headline, foreground]}
-        className={`h-[510vh] md:h-[${page == "home" ? 330 : 200}vh]`}
+        className={`h-[510vh] md:h-[330vh]`}
       />
     </ParallaxProvider>
   );
