@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="w-full h-16 fixed top-0 shadow-lg bg-black text-white font-bold z-[200] px-4 md:px-8">
       <div className="flex items-center justify-between h-full w-full">
-        <a href="/" className="flex items-center space-x-4">
+        <a href="/" className="flex items-center ">
           {isClient && (
             <video
               loop
@@ -30,12 +30,12 @@ const Navbar = () => {
           </span>
         </a>
         <div className="flex items-center justify-end w-full">
-          <div className="flex items-center space-x-4 md:space-x-8">
+          <div className="flex items-center space-x-4 md:space-x-8 hidden md:inline-block">
             <a href="/#about-me">About me</a>
             <a href="/#skills">Skills</a>
             <a href="/#projects">Projects</a>
           </div>
-          <div className="flex items-center space-x-2 md:space-x-5 ml-4 md:ml-8">
+          <div className="flex items-center pr-8 gap-4 md:gap-2 md:space-x-5 md:ml-8">
             {Socials.map((social) => (
               <a href={social.link} key={social.name}>
                 <img

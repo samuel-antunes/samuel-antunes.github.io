@@ -15,7 +15,7 @@ const Skills = () => {
 
   return (
     <section
-      className="flex flex-col items-center justify-center gap-5 h-screen overflow-hidden z-[25]"
+      className="flex flex-col items-center justify-center gap-5 h-fit md:h-screen overflow-hidden z-[25]"
       id="skills"
       style={{ transform: "scale(0.9)" }}
     >
