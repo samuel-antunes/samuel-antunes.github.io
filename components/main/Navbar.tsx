@@ -35,7 +35,7 @@ const Navbar = () => {
             <a href="/#skills">Skills</a>
             <a href="/#projects">Projects</a>
           </div>
-          <div className="flex items-center pr-8 gap-4 md:gap-2 md:space-x-5 md:ml-8">
+          <div className="flex items-center pr-4 md:pr-8 gap-4 md:gap-2 md:space-x-5 md:ml-8">
             {Socials.map((social) => (
               <a href={social.link} key={social.name}>
                 <img

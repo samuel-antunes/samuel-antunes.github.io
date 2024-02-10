@@ -70,7 +70,7 @@ function page() {
           </div>
 
           {/* Section 2 */}
-          <div className="flex flex-col md:flex-row gap-8 w-full z-[100] pt-[50px] h-screen">
+          <div className="flex flex-col md:flex-row gap-8 w-full z-[100] md:pt-[50px] h-screen">
             <div className="md:w-auto flex justify-start">
               <Observatory
                 urlBefore="m33_before.png"
