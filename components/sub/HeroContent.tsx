@@ -40,8 +40,9 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg max-w-[600px]"
         >
-          I&apos;m a Software Engineer with experience in Frontend, Backend, and
-          AI Software Development. Check out my projects and skills.
+          I&apos;m a Software Engineer with experience in Computer Vision,
+          Machine Learning and Full Stack Software Development. Check out my
+          projects and skills.
         </motion.p>
         <motion.a
           href="#skills"

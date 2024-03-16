@@ -79,26 +79,23 @@ function page() {
             </div>
             <div className="md:w-2/3 flex flex-col gap-6 md:pt-[150px] ">
               <p className="text-lg">
-                As it possible to see the final image is colored, and a
-                &quot;raw&quot; image is black and white, due to the fact that
-                the camera at the observatory is monochrome. To build the final
-                image I had to perform a composition of many images, for each of
-                the colors R, G, and B, that were taken with the physical
-                placement of those filters in front of the camera. The number of
-                images per color varied depending on the available data, but it
-                could be between 10 to 100&apos;s of images, leading to the
-                necessity of processing several GBs of data.
+                The final, colored image contrasts with the initial, black and
+                white "raw" image, as the observatory camera is monochrome. To
+                craft this colored image, I needed to merge numerous shots for
+                each RGB color, captured with specific filters in front of the
+                camera sensor. The quantity of images per color varied, ranging
+                from 10 to 100&apos;s, based on available data. This process
+                involved handling several gigabytes of data.
               </p>
-              {/* <p className="text-lg hidden md:flex">
-                Due to the memory constraints, I had to optimize the
-                computational time and memory utilization when automating the
-                calibration process. To achieve so I used a subprocess to run a
-                script that would perform the automated actions, and in the
-                subprocess I performed parallel programming in certain steps of
-                the process to achieve better performance. The results were more
-                than 5x faster than before optimizations, which lead to a better
-                user experience.
-              </p> */}
+              <p className="text-lg hidden md:flex">
+                Facing memory constraints, it was essential to optimize the
+                computational time and memory utilization during the automated
+                calibration process. I implemented a subprocess to run a script
+                that automated the necessary actions, integrating parallel
+                programming and just-in-time compilation in key stages to boost
+                efficiency. This approach significantly cut down processing
+                time, by more than 5x, enhancing the overall user experience.
+              </p>
             </div>
           </div>
         </div>
