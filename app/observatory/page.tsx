@@ -80,12 +80,13 @@ function page() {
             <div className="md:w-2/3 flex flex-col gap-6 md:pt-[150px] ">
               <p className="text-lg">
                 The final, colored image contrasts with the initial, black and
-                white "raw" image, as the observatory camera is monochrome. To
-                craft this colored image, I needed to merge numerous shots for
-                each RGB color, captured with specific filters in front of the
-                camera sensor. The quantity of images per color varied, ranging
-                from 10 to 100&apos;s, based on available data. This process
-                involved handling several gigabytes of data.
+                white &quot;raw&quot; image, as the observatory camera is
+                monochrome. To craft this colored image, I needed to merge
+                numerous shots for each RGB color, captured with specific
+                filters in front of the camera sensor. The quantity of images
+                per color varied, ranging from 10 to 100&apos;s, based on
+                available data. This process involved handling several gigabytes
+                of data.
               </p>
               <p className="text-lg hidden md:flex">
                 Facing memory constraints, it was essential to optimize the
