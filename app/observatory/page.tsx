@@ -63,7 +63,7 @@ function page() {
             </div>
             <div className="md:w-auto flex justify-end">
               <Observatory
-                urlBefore="swan_nebula_before.png"
+                urlBefore="swan_nebula_before.jpg"
                 urlAfter="swan_nebula_after.jpg"
               />
             </div>
@@ -73,7 +73,7 @@ function page() {
           <div className="flex flex-col md:flex-row gap-8 w-full z-[100] md:pt-[50px] h-screen">
             <div className="md:w-auto flex justify-start">
               <Observatory
-                urlBefore="m33_before.png"
+                urlBefore="m33_before.jpg"
                 urlAfter="m33_after_2.jpg"
               />
             </div>
@@ -89,7 +89,7 @@ function page() {
                 could be between 10 to 100&apos;s of images, leading to the
                 necessity of processing several GBs of data.
               </p>
-              <p className="text-lg hidden md:flex">
+              {/* <p className="text-lg hidden md:flex">
                 Due to the memory constraints, I had to optimize the
                 computational time and memory utilization when automating the
                 calibration process. To achieve so I used a subprocess to run a
@@ -98,7 +98,7 @@ function page() {
                 the process to achieve better performance. The results were more
                 than 5x faster than before optimizations, which lead to a better
                 user experience.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
