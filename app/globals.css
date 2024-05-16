@@ -173,7 +173,6 @@ body {
   transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
 }
 
-/* Add this in your global styles or the relevant component CSS file */
 .carousel .slide {
   background: none;
 }
@@ -188,7 +187,7 @@ body {
   border-left: 8px solid #000;
 }
 .carousel .control-dots {
-  bottom: -200px; /* Adjust the offset as needed to move dots down */
+  bottom: -200px;
 }
 .carousel .control-dots .dot {
   background-color: rgba(255, 255, 255, 0.5);

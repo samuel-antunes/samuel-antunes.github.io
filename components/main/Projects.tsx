@@ -23,8 +23,8 @@ const Projects = () => {
             <ProjectCard
               src="/samuel_with_pepper.jpg"
               title="Pepper Robot Project"
-              link="/pepper-robot"
-              description="Real-time anxiety behavior detection using Pepper robot and CNN. The project focused on developing and integrating AI models to analyze human behavior patterns, ensuring accurate real-time responses to alleviate anxiety symptoms."
+              link="/pepper"
+              description="Real-time anxiety behavior detection using Pepper robot and CNN. An AI system to analyze human behavior patterns."
               imgStyle={{ backgroundPosition: "center top" }} // Shift image down
             />
           </div>
