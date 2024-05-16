@@ -56,7 +56,7 @@ const Projects = () => {
             <ProjectCard
               src="/matrix.jpg"
               title="Complex Network Paper"
-              link="/complex-network-paper"
+              link="/exoplanets"
               description="Study and implementation of detection and classification algorithms in complex networks using graph theory."
             />
           </div>
