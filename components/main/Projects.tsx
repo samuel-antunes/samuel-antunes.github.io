@@ -16,12 +16,14 @@ const Projects = () => {
           autoPlay
           interval={5000}
           showStatus={false}
+          centerMode
+          centerSlidePercentage={33.33} // Show 3 cards at a time
         >
           <div>
             <ProjectCard
-              src="/thumb_pepper.jpg"
+              src="/samuel_with_pepper.jpg"
               title="Pepper Robot Project"
-              link="/pepper"
+              link="/pepper-robot"
               description="Real-time anxiety behavior detection using Pepper robot and CNN."
             />
           </div>
@@ -51,9 +53,9 @@ const Projects = () => {
           </div>
           <div>
             <ProjectCard
-              src="/thumb_paper.jpg"
+              src="/matrix.jpg"
               title="Complex Network Paper"
-              link="/exoplanets"
+              link="/complex-network-paper"
               description="Study and implementation of detection and classification algorithms in complex networks using graph theory."
             />
           </div>
