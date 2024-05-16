@@ -47,7 +47,7 @@ function page() {
               84% on the validation data.
             </p>
           </div>
-          <div className="md:w-auto flex justify-end items-center">
+          <div className="md:w-auto flex justify-center items-center">
             <img
               src="graph.jpg"
               alt="Time Series of Star Intensity"
@@ -58,11 +58,11 @@ function page() {
 
         {/* Data Structure Section */}
         <div className="flex flex-col md:flex-row gap-8 w-full z-[100] mt-[2%]">
-          <div className="md:w-auto flex justify-start">
+          <div className="md:w-auto flex justify-center items-center">
             <img
               src="matrix.jpg"
               alt="Adjacency Matrix Data Structure"
-              className="w-80 h-80 object-cover rounded-lg"
+              className="w-auto h-[24rem] object-cover rounded-lg"
             />
           </div>
           <div className="md:w-2/3 flex flex-col gap-6">
@@ -72,8 +72,8 @@ function page() {
               detected by the receiver when pointed at a specific region of the
               universe. Abrupt variations in luminous intensity indicate
               eclipses, which may be caused by exoplanets or binary stars. The
-              purpose of this study is to classify available light curves as
-              being representative of these two types of celestial bodies.
+              purpose of this study is to classify these light curves as being
+              representative of these two types of celestial bodies.
             </p>
             <p className="text-lg mt-5">
               The first step of analysis is to represent the time series as
@@ -86,16 +86,9 @@ function page() {
         </div>
 
         {/* Results Section */}
-        <div className="flex flex-col gap-10 w-full z-[100] mt-[2%]">
-          <div className="md:w-auto flex justify-center">
-            <img
-              src="graphs.jpg"
-              alt="Accuracy and Loss Function Graphs"
-              className="w-80 h-auto object-cover rounded-lg mb-10"
-            />
-          </div>
-          <div className="md:w-2/3 flex flex-col gap-6 mx-auto">
-            <p className="text-lg">
+        <div className="flex flex-col md:flex-row gap-10 w-full z-[100] mt-[2%]">
+          <div className="md:w-2/3 flex flex-col gap-6">
+            <p className="text-lg mt-5">
               The results obtained reveal that this approach is promising, as
               evidenced by validation data accuracy rates above 80%. In the
               three best results among the 100 trainings performed, these rates
@@ -109,6 +102,13 @@ function page() {
               and exploring other neural network architectures to further
               improve classification accuracy.
             </p>
+          </div>
+          <div className="md:w-auto flex justify-center items-center">
+            <img
+              src="graphs.jpg"
+              alt="Accuracy and Loss Function Graphs"
+              className="w-80 h-80 object-cover rounded-lg mb-10"
+            />
           </div>
         </div>
       </div>

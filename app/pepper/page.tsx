@@ -48,7 +48,7 @@ function page() {
               these behaviors.
             </p>
           </div>
-          <div className="md:w-auto flex justify-end items-center">
+          <div className="md:w-auto flex justify-center items-center">
             <img
               src="samuel_with_pepper.jpg"
               alt="Samuel with Pepper Robot"
@@ -59,7 +59,7 @@ function page() {
 
         {/* Project Details Section */}
         <div className="flex flex-col md:flex-row gap-8 w-full z-[100] mt-[2%]">
-          <div className="md:w-auto flex justify-start">
+          <div className="md:w-auto flex justify-center items-center">
             <img
               src="demo_photo.jpg"
               alt="Pepper Robot Demo"
@@ -110,7 +110,7 @@ function page() {
               health.
             </p>
           </div>
-          <div className="md:w-auto flex justify-end items-center">
+          <div className="md:w-auto flex justify-center items-center">
             <img
               src="team_photo.jpg"
               alt="Team Presentation"
