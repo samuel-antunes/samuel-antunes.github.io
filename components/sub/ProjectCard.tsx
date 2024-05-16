@@ -10,17 +10,16 @@ interface Props {
 
 const ProjectCard = ({ src, title, description, link }: Props) => {
   return (
-    <a href={link}>
-      <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#0c011b] hover:scale-[1.05] transition ease-in-out duration-300 w-[100%] md:w-[30vw]">
+    <a href={link} className="block">
+      <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#0c011b] hover:scale-[1.05] transition ease-in-out duration-300 w-[100%]">
         <Image
           src={src}
           alt={title}
           width={500}
           height={500}
-          className="w-full"
-          // objectFit="cover"
+          className="w-full h-full object-cover"
         />
-        <div className="relative p-4 font-bold bg-black bg-opacity-40">
+        <div className="absolute bottom-0 left-0 w-full p-4 font-bold bg-black bg-opacity-60">
           <h1 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-yellow-300">
             {title}
           </h1>
