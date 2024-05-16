@@ -6,7 +6,7 @@ function page() {
   return (
     <div className="h-full w-full scroll-smooth">
       <div className="font-bold text-white flex flex-col items-center justify-center gap-10 pt-24 h-full w-screen z-[100] px-5 md:px-20">
-        {/* Section 1: Introduction */}
+        {/* Header Section */}
         <div className="flex flex-col md:flex-row gap-10 w-full z-[100] mt-[2%]">
           <div className="md:w-2/3 flex flex-col gap-6">
             <h2 className="text-3xl mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -27,7 +27,7 @@ function page() {
                   clipRule="evenodd"
                 />
               </svg>
-              <span className="text-sm">CoRoT Space Telescope Project</span>
+              <span className="text-sm">Maua Institute of Technology</span>
             </div>
             <p className="text-lg mt-5">
               This paper describes a system for processing time series data,
@@ -43,18 +43,25 @@ function page() {
               84% on the validation data.
             </p>
           </div>
-        </div>
-
-        {/* Section 2: Data Structure */}
-        <div className="flex flex-col md:flex-row gap-8 w-full z-[100] md:pt-[50px] h-screen">
-          <div className="md:w-auto flex justify-start">
+          <div className="md:w-auto flex justify-end">
             <img
-              src="figure1_graph_example.jpg"
-              alt="Graph Example"
+              src="graph.jpg"
+              alt="Time Series of Star Intensity"
               className="w-80 h-80 object-cover rounded-lg"
             />
           </div>
-          <div className="md:w-2/3 flex flex-col gap-6 md:pt-[150px]">
+        </div>
+
+        {/* Data Structure Section */}
+        <div className="flex flex-col md:flex-row gap-8 w-full z-[100] mt-[2%]">
+          <div className="md:w-auto flex justify-start">
+            <img
+              src="matrix.jpg"
+              alt="Adjacency Matrix Data Structure"
+              className="w-80 h-80 object-cover rounded-lg"
+            />
+          </div>
+          <div className="md:w-2/3 flex flex-col gap-6">
             <p className="text-lg">
               The light curves used in this study are time series of varying
               lengths, where the observed value is the luminous intensity
@@ -72,19 +79,19 @@ function page() {
               eclipses caused by exoplanets or binary stars.
             </p>
           </div>
-          <div className="md:w-auto flex justify-end">
-            <img
-              src="timeseries.jpg"
-              alt="Samuel with Pepper Robot"
-              className="w-80 h-80 object-cover rounded-lg"
-            />
-          </div>
         </div>
 
-        {/* Section 3: Results */}
-        <div className="flex flex-col md:flex-row gap-10 w-full z-[100] mt-[2%]">
-          <div className="md:w-2/3 flex flex-col gap-6">
-            <p className="text-lg mt-5">
+        {/* Results Section */}
+        <div className="flex flex-col gap-10 w-full z-[100] mt-[2%]">
+          <div className="md:w-auto flex justify-center">
+            <img
+              src="graphs.jpg"
+              alt="Accuracy and Loss Function Graphs"
+              className="w-full h-auto object-cover rounded-lg"
+            />
+          </div>
+          <div className="md:w-2/3 flex flex-col gap-6 mx-auto">
+            <p className="text-lg">
               The results obtained reveal that this approach is promising, as
               evidenced by validation data accuracy rates above 80%. In the
               three best results among the 100 trainings performed, these rates
@@ -98,13 +105,6 @@ function page() {
               and exploring other neural network architectures to further
               improve classification accuracy.
             </p>
-          </div>
-          <div className="md:w-auto flex justify-end">
-            <img
-              src="graphs.jpg"
-              alt="Classification Process"
-              className="w-80 h-80 object-cover rounded-lg"
-            />
           </div>
         </div>
       </div>
