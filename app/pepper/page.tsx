@@ -58,7 +58,7 @@ function page() {
         </div>
 
         {/* Project Details Section */}
-        <div className="flex flex-col md:flex-row gap-8 w-full z-[100] mt-[2%]">
+        <div className="flex flex-col md:flex-row gap-8 w-full z-[100] mt-[2%] items-center">
           <div className="md:w-auto flex justify-center items-center">
             <img
               src="demo_photo.jpg"
@@ -66,7 +66,7 @@ function page() {
               className="w-auto h-[24rem] object-cover rounded-lg"
             />
           </div>
-          <div className="md:w-2/3 flex flex-col gap-6 md:pt-[150px]">
+          <div className="md:w-2/3 flex flex-col gap-6">
             <p className="text-lg">
               Our project, titled &quot;Robot Eye on Your Body Habits:
               AI-powered BFRB detection on Pepper&quot;, was a CMPT 419 Final

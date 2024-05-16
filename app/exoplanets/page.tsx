@@ -57,7 +57,7 @@ function page() {
         </div>
 
         {/* Data Structure Section */}
-        <div className="flex flex-col md:flex-row gap-8 w-full z-[100] mt-[2%]">
+        <div className="flex flex-col md:flex-row gap-8 w-full z-[100] mt-[2%] items-center">
           <div className="md:w-auto flex justify-center items-center">
             <img
               src="matrix.jpg"
