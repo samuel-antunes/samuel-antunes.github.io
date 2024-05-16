@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="h-full w-full flex flex-col gap-10 z-[50] pl-10 pr-10 pt-[30px]">
         <Carousel
           showThumbs={false}
-          infiniteLoop={true} // Disable cycling
+          infiniteLoop={false} // Disable cycling
           useKeyboardArrows
           autoPlay
           interval={5000}

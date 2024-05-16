@@ -43,7 +43,7 @@ const SkillDataProvider = ({
         <div
           className={`absolute bottom-0 translate-y-full bg-black text-white px-2 py-1 z-10 transition-all duration-1000 ease-out ${
             isHovered
-              ? "opacity-100 translate-y-[10px]"
+              ? "opacity-100 translate-y-[-10px]"
               : "opacity-0 -translate-y-[10px]"
           }`}
         >
