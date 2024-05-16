@@ -57,7 +57,7 @@ function page() {
         <div className="flex flex-col md:flex-row gap-8 w-full z-[100] md:pt-[50px] h-screen">
           <div className="md:w-auto flex justify-start">
             <img
-              src="pepper_robot_demo.jpg"
+              src="demo_photo.jpg"
               alt="Pepper Robot Demo"
               className="w-80 h-80 object-cover rounded-lg"
             />
@@ -108,7 +108,7 @@ function page() {
           </div>
           <div className="md:w-auto flex justify-end">
             <img
-              src="team_presentation.jpg"
+              src="team_photo.jpg"
               alt="Team Presentation"
               className="w-80 h-80 object-cover rounded-lg"
             />
