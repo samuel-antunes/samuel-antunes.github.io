@@ -25,7 +25,7 @@ const Projects = () => {
               title="Pepper Robot Project"
               link="/pepper-robot"
               description="Real-time anxiety behavior detection using Pepper robot and CNN."
-              imgStyle={{ transform: "translateY(20%)" }} // Shift image down
+              imgStyle={{ backgroundPosition: "center bottom" }} // Shift image down
             />
           </div>
           <div>
