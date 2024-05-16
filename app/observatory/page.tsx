@@ -2,105 +2,88 @@
 
 import Observatory from "@/components/main/Observatory";
 import React from "react";
-import { motion } from "framer-motion";
-import {
-  slideInFromLeft,
-  slideInFromTop,
-  slideInFromRight,
-} from "@/utils/motion";
-
-import AdvancedBannerTop from "@/components/main/AdvancedBanner";
-import ParallaxBackground from "@/components/main/BackgroundParallax";
 
 function page() {
   return (
     <div className="h-full w-full scroll-smooth">
-      <ParallaxBackground
-        starlessImg="/starless_orion_small.jpg"
-        starmaskImg="/starmask_orion_small.png"
-        speedFactor={0.15}
-      >
-        <div className="font-bold text-white flex flex-col items-center justify-center gap-10 pt-24 h-full w-screen z-[100] px-5 md:px-20">
-          {/* Section 1 */}
-          <div className="flex flex-col md:flex-row gap-10 w-full z-[100] mt-[2%]">
-            <div className="md:w-2/3 flex flex-col gap-6">
-              <h2 className="text-3xl mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500">
-                Astrophotography Application
-              </h2>
-              <div className="Title-box py-[8px] px-[10px] border border-[$7042f88b] opacity-[0.9]">
-                {/* SVG placeholder */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                <span className="text-sm">SFU Trottier Observatory</span>
-              </div>
-              <p className="text-lg mt-5">
-                My most recent work was providing software for an observatory!
-                The image on the right provides a comparison to what a
-                &quot;raw&quot; image looked like, and what the final image
-                looked like after being processed by the software I created.
-                (BTW, this is the Swan Nebula, can you see it?)
-              </p>
-              <p className="text-lg mt-5">
-                I received this opportunity by achieving the highest grade in a
-                physics course, with the topic &quot;Introduction to
-                Observational Astrophysics&quot;, and for being a hobbist
-                astrophotographer (The background images of this website were
-                taken by me). The goal of the project was to design a desktop
-                application, that would be used by the non-technical staff of
-                the SFU Trottier Observatory, to process astronomical images
-                taken with the equipment there.
-              </p>
+      <div className="font-bold text-white flex flex-col items-center justify-center gap-10 pt-24 h-full w-screen z-[100] px-5 md:px-20">
+        {/* Section 1 */}
+        <div className="flex flex-col md:flex-row gap-10 w-full z-[100] mt-[2%]">
+          <div className="md:w-2/3 flex flex-col gap-6">
+            <h2 className="text-3xl mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-500">
+              Astrophotography Application
+            </h2>
+            <div className="Title-box py-[8px] px-[10px] border border-[$7042f88b] opacity-[0.9]">
+              {/* SVG placeholder */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <span className="text-sm">SFU Trottier Observatory</span>
             </div>
-            <div className="md:w-auto flex justify-end">
-              <Observatory
-                urlBefore="swan_nebula_before.jpg"
-                urlAfter="swan_nebula_after.jpg"
-              />
-            </div>
+            <p className="text-lg mt-5">
+              My most recent work was providing software for an observatory! The
+              image on the right provides a comparison to what a &quot;raw&quot;
+              image looked like, and what the final image looked like after
+              being processed by the software I created. (BTW, this is the Swan
+              Nebula, can you see it?)
+            </p>
+            <p className="text-lg mt-5">
+              I received this opportunity by achieving the highest grade in a
+              physics course, with the topic &quot;Introduction to Observational
+              Astrophysics&quot;, and for being a hobbist astrophotographer (The
+              background images of this website were taken by me). The goal of
+              the project was to design a desktop application, that would be
+              used by the non-technical staff of the SFU Trottier Observatory,
+              to process astronomical images taken with the equipment there.
+            </p>
           </div>
-
-          {/* Section 2 */}
-          <div className="flex flex-col md:flex-row gap-8 w-full z-[100] md:pt-[50px] h-screen">
-            <div className="md:w-auto flex justify-start">
-              <Observatory
-                urlBefore="m33_before.jpg"
-                urlAfter="m33_after_2.jpg"
-              />
-            </div>
-            <div className="md:w-2/3 flex flex-col gap-6 md:pt-[150px] ">
-              <p className="text-lg">
-                The final, colored image contrasts with the initial, black and
-                white &quot;raw&quot; image, as the observatory camera is
-                monochrome. To craft this colored image, I needed to merge
-                numerous shots for each RGB color, captured with specific
-                filters in front of the camera sensor. The quantity of images
-                per color varied, ranging from 10 to 100&apos;s, based on
-                available data. This process involved handling several gigabytes
-                of data.
-              </p>
-              <p className="text-lg hidden md:flex">
-                Facing memory constraints, it was essential to optimize the
-                computational time and memory utilization during the automated
-                calibration process. I implemented a subprocess to run a script
-                that automated the necessary actions, integrating parallel
-                programming and just-in-time compilation in key stages to boost
-                efficiency. This approach significantly cut down processing
-                time, by more than 5x, enhancing the overall user experience.
-              </p>
-            </div>
+          <div className="md:w-auto flex justify-end">
+            <Observatory
+              urlBefore="swan_nebula_before.jpg"
+              urlAfter="swan_nebula_after.jpg"
+            />
           </div>
         </div>
-      </ParallaxBackground>
+
+        {/* Section 2 */}
+        <div className="flex flex-col md:flex-row gap-8 w-full z-[100] md:pt-[50px] h-screen">
+          <div className="md:w-auto flex justify-start">
+            <Observatory
+              urlBefore="m33_before.jpg"
+              urlAfter="m33_after_2.jpg"
+            />
+          </div>
+          <div className="md:w-2/3 flex flex-col gap-6 md:pt-[150px] ">
+            <p className="text-lg">
+              The final, colored image contrasts with the initial, black and
+              white &quot;raw&quot; image, as the observatory camera is
+              monochrome. To craft this colored image, I needed to merge
+              numerous shots for each RGB color, captured with specific filters
+              in front of the camera sensor. The quantity of images per color
+              varied, ranging from 10 to 100&apos;s, based on available data.
+              This process involved handling several gigabytes of data.
+            </p>
+            <p className="text-lg hidden md:flex">
+              Facing memory constraints, it was essential to optimize the
+              computational time and memory utilization during the automated
+              calibration process. I implemented a subprocess to run a script
+              that automated the necessary actions, integrating parallel
+              programming and just-in-time compilation in key stages to boost
+              efficiency. This approach significantly cut down processing time,
+              by more than 5x, enhancing the overall user experience.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
