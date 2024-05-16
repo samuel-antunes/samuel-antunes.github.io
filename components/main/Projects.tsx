@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="h-full w-full flex flex-col gap-10 z-[50] pl-10 pr-10 pt-[30px]">
         <Carousel
           showThumbs={false}
-          infiniteLoop
+          infiniteLoop={false} // Disable cycling
           useKeyboardArrows
           autoPlay
           interval={5000}
@@ -25,6 +25,7 @@ const Projects = () => {
               title="Pepper Robot Project"
               link="/pepper-robot"
               description="Real-time anxiety behavior detection using Pepper robot and CNN."
+              imgStyle={{ transform: "translateY(20%)" }} // Shift image down
             />
           </div>
           <div>
