@@ -46,7 +46,7 @@ function page() {
           </div>
           <div className="md:w-auto flex justify-end">
             <img
-              src="/samuel_with_pepper.jpg"
+              src="samuel_with_pepper.jpg"
               alt="Samuel with Pepper Robot"
               className="w-80 h-80 object-cover rounded-lg"
             />
@@ -57,17 +57,17 @@ function page() {
         <div className="flex flex-col md:flex-row gap-8 w-full z-[100] md:pt-[50px] h-screen">
           <div className="md:w-auto flex justify-start">
             <img
-              src="/demo_photo.jpg"
+              src="pepper_robot_demo.jpg"
               alt="Pepper Robot Demo"
               className="w-80 h-80 object-cover rounded-lg"
             />
           </div>
           <div className="md:w-2/3 flex flex-col gap-6 md:pt-[150px]">
             <p className="text-lg">
-              Our project, titled "Robot Eye on Your Body Habits: AI-powered
-              BFRB detection on Pepper", was a CMPT 419 Final Project for Spring
-              2024. The team included Samir Arora, Salah Eddine Chahma, Samuel
-              Antunes Miranda, and Zachary Syvenky.
+              Our project, titled &quot;Robot Eye on Your Body Habits:
+              AI-powered BFRB detection on Pepper&quot;, was a CMPT 419 Final
+              Project for Spring 2024. The team included Samir Arora, Salah
+              Eddine Chahma, Samuel Antunes Miranda, and Zachary Syvenky.
             </p>
             <p className="text-lg mt-5">
               BFRBs include repetitive behaviors like hair pulling
@@ -108,7 +108,7 @@ function page() {
           </div>
           <div className="md:w-auto flex justify-end">
             <img
-              src="/team_photo.jpg"
+              src="team_presentation.jpg"
               alt="Team Presentation"
               className="w-80 h-80 object-cover rounded-lg"
             />
