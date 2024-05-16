@@ -188,7 +188,7 @@ body {
   border-left: 8px solid #000;
 }
 .carousel .control-dots {
-  bottom: -50px; /* Adjust the offset as needed to move dots down */
+  bottom: -200px; /* Adjust the offset as needed to move dots down */
 }
 .carousel .control-dots .dot {
   background-color: rgba(255, 255, 255, 0.5);
